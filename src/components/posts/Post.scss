@@ -1,0 +1,75 @@
+.post-meta {
+  img {
+    border-radius: 50%;
+    display: inline-block;
+    height: 32px;
+    margin-right: 3px;
+    vertical-align: baseline;
+  }
+  .info {
+    display: inline-block;
+    a {
+      text-decoration: none;
+      color: #5cb85c;
+
+      &:hover {
+        color: #3d8b3d;
+        text-decoration: underline !important;
+      }
+    }
+    span {
+      color: #bbb;
+      font-size: 0.8rem;
+    }
+  }
+  button {
+    color: #5cb85c;
+    background-image: none;
+    background-color: transparent;
+    border-color: #5cb85c;
+    svg {
+      margin-right: 2px !important;
+    }
+    &:hover {
+      color: #fff;
+      background-color: #398439;
+      border-color: #2d672d;
+    }
+  }
+  .date {
+    font-weight: 300;
+    font-size: 24px;
+    color: #999;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+}
+.post-body {
+  h1 {
+    font-weight: 600 !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 3px;
+    color: black;
+  }
+  p {
+    font-weight: 300;
+    font-size: 24px;
+    color: #999;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  span {
+    max-width: 30%;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #bbb;
+    vertical-align: middle;
+  }
+}
+.clicked {
+  color: white !important;
+  background-color: #449d44 !important;
+  border-color: #419641 !important;
+}

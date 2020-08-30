@@ -1,0 +1,20 @@
+li {
+  list-style: none;
+  display: inline;
+  .active {
+    color: #5cb85c !important;
+    border-bottom: 2px solid #5cb85c !important;
+    padding-bottom: 19px;
+    cursor: default;
+  }
+  .not-active {
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: 0 0;
+    color: #aaa;
+    &:hover {
+      color: #555;
+    }
+  }
+}

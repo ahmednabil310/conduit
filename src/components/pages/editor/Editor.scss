@@ -1,0 +1,15 @@
+.editor {
+  button {
+    color: #fff;
+    background-color: #5cb85c !important;
+    border-color: #5cb85c !important;
+    &:hover {
+      color: #fff;
+      background-color: #449d44 !important;
+      border-color: #419641 !important;
+    }
+  }
+  textarea {
+    width: 100% !important;
+  }
+}
