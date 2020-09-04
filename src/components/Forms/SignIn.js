@@ -8,7 +8,6 @@ export default class SignIn extends Component {
     this.state = {
       email: "",
       password: "",
-
       errors: [],
       isSubmitted: false,
     };
@@ -33,6 +32,7 @@ export default class SignIn extends Component {
       .then((res) => {
         localStorage.setItem("cool", res.data.user.token);
         window.location = "/";
+        localStorage.setItem("pass", this.state.password);
       })
       .catch((err) => {
         this.setState({ errors: err.response.data });

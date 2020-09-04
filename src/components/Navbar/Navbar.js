@@ -73,9 +73,9 @@ export default class Navbar extends Component {
                         Settings
                       </li>
                     </Link>
-                    <a href={`/users/${value.user}`}>
+                    <Link to={`/users/${value.user}`}>
                       <li className="d-inline logged">{value.user}</li>
-                    </a>
+                    </Link>
                   </ul>
                 </nav>
               </div>

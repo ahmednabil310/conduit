@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
-import { BrowserRouter as Router, Route, HashRouter } from "react-router-dom";
+import {  Route, HashRouter } from "react-router-dom";
 import SignIn from "./components/Forms/SignIn";
 import SignUp from "./components/Forms/SignUp";
 import Home from "./components/pages/Home";

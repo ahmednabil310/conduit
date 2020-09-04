@@ -11,10 +11,22 @@ export default class Settings extends Component {
       username: "",
       bio: "",
       email: "",
-      password: "",
+      password: localStorage.getItem("pass"),
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  componentDidMount() {
+    const jwt = getjwt();
+    axios
+      .get("https://conduit.productionready.io/api/user", {
+        headers: { Authorization: `Token ${jwt}` },
+      })
+      .then((res) => {
+        this.setState({ username: res.data.user.username });
+        this.setState({ email: res.data.user.email });
+      })
+      .catch((error) => console.log(error));
   }
   handleLogOut = () => {
     localStorage.removeItem("cool");
@@ -34,9 +46,9 @@ export default class Settings extends Component {
         {
           user: {
             image: this.state.url,
-            username: this.state.username,
+            username: e.target.value,
             bio: this.state.bio,
-            email: this.state.email,
+            email: e.target.value,
             password: this.state.password,
           },
         },

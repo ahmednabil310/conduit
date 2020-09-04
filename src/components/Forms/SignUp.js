@@ -34,6 +34,7 @@ export default class SignUp extends Component {
       .then((res) => {
         localStorage.setItem("cool", res.data.user.token);
         window.location = "/";
+        localStorage.setItem("pass", this.state.password);
       })
       .catch((err) => {
         this.setState({ errors: err.response.data });

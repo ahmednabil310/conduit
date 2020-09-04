@@ -47,7 +47,7 @@ export default class Post extends Component {
             <div className="post">
               <div className="post-meta">
                 <Link to={`/users/${author.username}`} className="img">
-                  <img src={author.image} alt="#" />
+                  <img src={author.image} alt="" />
                 </Link>
                 <div className="info">
                   <Link to={`/users/${author.username}`}>
