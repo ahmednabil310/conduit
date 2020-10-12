@@ -6,11 +6,9 @@ import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 import { FormContextProvider } from "./components/contexts/FormContext";
 ReactDOM.render(
-  <React.StrictMode>
-    <FormContextProvider>
-      <App />
-    </FormContextProvider>
-  </React.StrictMode>,
+  <FormContextProvider>
+    <App />
+  </FormContextProvider>,
   document.getElementById("root")
 );
 
