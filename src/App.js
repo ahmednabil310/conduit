@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
-import { Route, HashRouter } from "react-router-dom";
+import { Route, HashRouter, BrowserRouter } from "react-router-dom";
 import SignIn from "./components/Forms/SignIn";
 import SignUp from "./components/Forms/SignUp";
 import Home from "./components/pages/Home";
@@ -12,7 +12,7 @@ import Settings from "./components/pages/settings/Settings";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="App">
         <Navbar />
 
@@ -24,7 +24,7 @@ function App() {
         <Route path="/editor" component={Editor} />
         <Route path="/settings" component={Settings} />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
