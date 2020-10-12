@@ -12,7 +12,7 @@ import Settings from "./components/pages/settings/Settings";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <Navbar />
 
@@ -24,7 +24,7 @@ function App() {
         <Route path="/editor" component={Editor} />
         <Route path="/settings" component={Settings} />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
